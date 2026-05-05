@@ -1,0 +1,25 @@
+{
+	"name": "creode/modular-ai",
+	"description": "Enables MCP make commands for Laravel Modular applications",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {
+		"internachi/modular": "^3.0",
+		"laravel/mcp": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Creode\\ModularAi\\": "src/",
+			"Creode\\ModularAi\\Tests\\": "tests/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Creode\\ModularAi\\Providers\\ModularAiServiceProvider"
+			]
+		}
+	}
+}
