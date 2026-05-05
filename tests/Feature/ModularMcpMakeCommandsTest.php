@@ -7,9 +7,9 @@ use Creode\ModularAi\Console\Commands\MakeMcpPromptCommand;
 use Creode\ModularAi\Console\Commands\MakeMcpResourceCommand;
 use Creode\ModularAi\Console\Commands\MakeMcpServerCommand;
 use Creode\ModularAi\Console\Commands\MakeMcpToolCommand;
+use Creode\ModularAi\Tests\TestCase;
 use Illuminate\Support\Facades\Artisan;
 use PHPUnit\Framework\Attributes\DataProvider;
-use Tests\TestCase;
 
 class ModularMcpMakeCommandsTest extends TestCase
 {

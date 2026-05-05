@@ -2,6 +2,8 @@
 
 This module adds MCP “make” Artisan commands that play nicely with **Internachi Modular** module structure.
 
+Modular upstream: `https://github.com/InterNACHI/modular`
+
 It’s packaged as `creode/modular-ai` and auto-registers its service provider via Composer.
 
 ---
@@ -20,22 +22,20 @@ These commands generate MCP classes in the appropriate module directories rather
 
 ---
 
-## Usage (in this repo, via DDEV)
-
-From the project root:
+## Usage
 
 ```bash
-ddev exec php artisan make:mcp-tool ExampleTool
-ddev exec php artisan make:mcp-server ExampleServer
-ddev exec php artisan make:mcp-resource ExampleResource
-ddev exec php artisan make:mcp-prompt ExamplePrompt
-ddev exec php artisan make:mcp-app-resource ExampleAppResource
+php artisan make:mcp-tool ExampleTool
+php artisan make:mcp-server ExampleServer
+php artisan make:mcp-resource ExampleResource
+php artisan make:mcp-prompt ExamplePrompt
+php artisan make:mcp-app-resource ExampleAppResource
 ```
 
 See command options:
 
 ```bash
-ddev exec php artisan make:mcp-tool --help
+php artisan make:mcp-tool --help
 ```
 
 ---
@@ -43,7 +43,6 @@ ddev exec php artisan make:mcp-tool --help
 ## Development notes
 
 - The commands are registered by `Creode\ModularAi\Providers\ModularAiServiceProvider` and only load when `runningInConsole()`.
-- Tests live under `app-modules/modular-ai/tests`.
 
 ---
 
