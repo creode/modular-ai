@@ -5,10 +5,10 @@
 	"license": "proprietary",
 	"require": {
 		"internachi/modular": "^3.0",
-		"laravel/mcp": "^0.7.0"
+		"laravel/mcp": "*"
 	},
 	"require-dev": {
-		"orchestra/testbench": "^10.0",
+		"orchestra/testbench": "*",
 		"phpunit/phpunit": "*"
 	},
 	"autoload": {
